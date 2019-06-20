@@ -49,7 +49,7 @@ Route::get('create', function() {
 	return "created";
 });
 
-Route::get('create', function() {
+/*Route::get('create', function() {
 	$reviews.recipe_id = "";
 	$reviews.author = "Araba";
 	$reviews.body = "This dish was easy to make.  I have already shared this recipe with my friends and family";
@@ -62,3 +62,4 @@ Route::get('create', function() {
 	);
 	return "created";
 });
+*/

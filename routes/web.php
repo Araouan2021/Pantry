@@ -63,3 +63,8 @@ Route::get('create', function() {
 	return "created";
 });
 */
+
+Route::get('/recipes', function() {
+	$recipes = Recipe::all();
+	return $recipes;
+});

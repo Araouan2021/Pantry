@@ -64,7 +64,23 @@ Route::get('create', function() {
 });
 */
 
-Route::get('/recipes', function() {
-	$recipes = Recipe::all();
-	return $recipes;
+Route::get('/recipes', 'RecipesController@index');
+
+
+Route::get('/recipe/{id}', function($id){
+	$recipe = Recipe::find($id);
+	return $recipe->recipe;
 });
+
+Route::get('/delete/{id}', function($id){
+	Recipe::destroy($id);
+	return 'deleted';
+});
+
+/*Route::get('update/{id', function($id){
+	$recipe = recipe::find($id);
+    $recipe->update([]);
+    return 'updated';
+});
+*/
+

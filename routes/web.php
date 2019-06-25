@@ -17,15 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/create', 'RecipesController@create');
+Route::get('/add-recipe', 'RecipesController@ShowAddRecipeForm')->name('recipes.add');
 
-Route::get('/recipes', 'RecipesController@index');
+Route::post('add', 'RecipesController@AddRecipe')->name('recipes.save');
 
-Route::get('/recipe/{id}', 'RecipesController@show');
-
-Route::get('/delete/{id}', 'RecipesController@destroy');
-		  
-
+Route::get('/recipes', 'RecipesController@showRecipes')->name('recipes');
 
 
 

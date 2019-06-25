@@ -16,7 +16,7 @@ body {
 	font-family: 'Allura', cursive;
 }
 
-input[type=submit] {
+.btn {
 	background-color: DarkRed;
 	font-family: 'Damion', sans-serif;
 	font-size: 20px;

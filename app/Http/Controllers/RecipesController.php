@@ -9,7 +9,7 @@ class RecipesController extends Controller
 {
 
 	public function ShowAddRecipeForm(){
-    	return view('recipes.add-recipe');
+    	return view('add-recipe');
     }
 
     public function addRecipe(Request $request){
@@ -20,7 +20,7 @@ class RecipesController extends Controller
 
     public function showRecipes(){
     $recipes = Recipe::all();
-    return view('recipes.recipes', compact('recipes'));
+    return view('recipes', compact('recipes'));
     }
 }	
     

@@ -7,6 +7,9 @@
 
 input {
 	width: 100%;
+	padding: 15px 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -37,14 +40,15 @@ body {
 <body>
 
 <form action="{{route('recipes.save')}}" method="post">
-<div class="form-group">
-{{ csrf_field() }}
-Title: <input type="text" class="form-control" name="title"> 
-Ingredients: <input type="text" name="ingredients">
-Method: <input type="text" name="method"><br>
-Size: <input type="text" name="size"><br>
-Time: <input type="text" name="time"><br>
-</div>
+  <div class="form-group">
+    {{ csrf_field() }}
+    Title: <input type="text" class="form-control" name="title"> 
+	Ingredients: <input type="text" name="ingredients">
+	Method: <input type="text" name="method"><br>
+	Size: <input type="text" name="size"><br>
+	Time: <input type="text" name="time"><br>
+  </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 

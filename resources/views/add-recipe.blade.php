@@ -5,6 +5,10 @@
 </head>
 <style>
 
+input {
+	width: 100%;
+}
+
 h1 {
 	font-family: 'Damion', sans-serif;
 	color: DarkRed;

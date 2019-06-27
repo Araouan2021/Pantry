@@ -2,6 +2,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <style>
 
@@ -32,6 +33,13 @@ body {
     margin: 20px;
     border: none;
     border-radius: 4px;
+}
+
+input[type=text] {
+	font-family: 'Ubuntu', sans-serif;
+	color: SaddleBrown;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 </style>

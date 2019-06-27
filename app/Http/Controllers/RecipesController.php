@@ -7,18 +7,18 @@ use App\Recipe;
 
 class RecipesController extends Controller
 {
-
 	public function ShowAddRecipeForm(){
     	return view('add-recipe');
     }
 
     public function addRecipe(Request $request){
-    	$title = $request->title;
-    	$ingredients = $request->ingredients;
-    	$method = $request->method;
-    	$size = $request->size;
-    	$time = $time->time;
-    	Recipe::create(['title'=>$title, 'ingredients'->$ingredients, 'method'=>$method, 'size'=>$size, 'time'=>$time]);
+    	Recipe::create([
+    	'title' => request('title'),
+    	'ingredients' => request('ingredients'),
+    	'method' => request('method'),
+    	'size' => request('size'),
+    	'time' => request('time')
+    	]);
 
     	return redirect()->route('recipes');
     }

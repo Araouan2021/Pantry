@@ -14,7 +14,12 @@ class RecipesController extends Controller
 
     public function addRecipe(Request $request){
     	$title = $request->title;
-    	Recipe::create(['title'=>$title]);
+    	$ingredients = $request->ingredients;
+    	$method = $request->method;
+    	$size = $request->size;
+    	$time = $time->time;
+    	Recipe::create(['title'=>$title, 'ingredients'->$ingredients, 'method'=>$method, 'size'=>$size, 'time'=>$time]);
+
     	return redirect()->route('recipes');
     }
 

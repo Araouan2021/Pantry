@@ -42,13 +42,13 @@ body {
 <form action="{{route('recipes.save')}}" method="post">
   <div class="form-group">
     {{ csrf_field() }}
-    Title: <input type="text" class="form-control" name="title"> 
-	Ingredients: <input type="text" name="ingredients">
+    Title: <input type="text" class="form-control" name="title"><br> 
+	Ingredients: <input type="text" name="ingredients"><br>
 	Method: <input type="text" name="method"><br>
 	Size: <input type="text" name="size"><br>
 	Time: <input type="text" name="time"><br>
   </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-</div>
+</div> 
 

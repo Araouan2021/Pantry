@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Review extends Model
 {
-    protected $fillable = ['reviews.recipe_id', 'author', 'body'];
+    protected $fillable = ['recipe_id', 'title', 'ingredients', 'method', 'size', 'time'];
 }

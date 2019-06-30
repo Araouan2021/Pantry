@@ -8,3 +8,8 @@ class Recipe extends Model
 {
     protected $fillable = ['recipe_id', 'title', 'ingredients', 'method', 'size', 'time'];
 }
+	public function reviews(){
+		return $this->hasMany('App\Review');
+	}
+
+}

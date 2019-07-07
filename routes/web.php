@@ -23,5 +23,13 @@ Route::post('add', 'RecipesController@AddRecipe')->name('recipes.save');
 
 Route::get('/recipes', 'RecipesController@showRecipes')->name('recipes');
 
+Route::get('/review/{id}', function($id){
+	$recipe = Recipe::find($id);
+	return $recipe->reviews;
+});
 
 
+Route::get('/add-review/{id', function($id){
+	$recipe = Recipe::find($id);
+	$recipe->reviews()->create()
+});

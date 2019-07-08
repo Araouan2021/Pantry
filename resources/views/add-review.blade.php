@@ -99,12 +99,12 @@ h4 {
   </div>
   <hr> 
   <h6>Reviews</h6>
-  {{for review in reviews:}}
+  @foreach($reviews as $review)
   <div class="reviews">
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>{{=review.author}}</p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>{{=review.body}}</p>
   </div>
-  {{pass}}
+  @endeach
       
       
 

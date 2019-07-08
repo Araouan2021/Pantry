@@ -16,11 +16,8 @@ class CreateReviewsTable extends Migration
         Schema::create('reviews', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('recipe_id');
-            $table->string('title');
-            $table->longText('ingredients');
-            $table->longText('method');
-            $table->string('size');
-            $table->string('time');
+            $table->string('author');
+            $table->longText('body');
             $table->timestamps();
         });
     }

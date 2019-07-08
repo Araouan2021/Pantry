@@ -13,11 +13,8 @@ class ReviewsController extends Controller
     public function addReview(Request $request){
     	Review::create([
     	'recipe_id' => request('recipe_id')
-    	'title' => request('title'),
-    	'ingredients' => request('ingredients'),
-    	'method' => request('method'),
-    	'size' => request('size'),
-    	'time' => request('time')
+    	'author' => request('author'),
+    	'body' => request('body'),
     	]);
 
     	return redirect()->route('reviews');

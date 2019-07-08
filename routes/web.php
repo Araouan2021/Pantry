@@ -31,5 +31,5 @@ Route::get('/review/{id}', function($id){
 
 Route::get('/add-review/{id', function($id){
 	$recipe = Recipe::find($id);
-	$recipe->reviews()->create()
+	$recipe->reviews()->create();
 });

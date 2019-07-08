@@ -5,8 +5,8 @@
 <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
-<link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
-<link rel="{{ asset('dist/icons/css/materialdesignicons.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dist/icons/css/materialdesignicons.css">
 </head>
 <style>
 

@@ -83,7 +83,7 @@ h4 {
       <hr>
 
   <div id="after_submit"></div>
-  <form action="{{=URL('postReview', args=recipe.id)}}" method="post" class="form">
+  <form action="{{route('add-review', '$recipe.id')}}" method="post" class="form">
   <div class="row">
     <label class="required" for="name">Your name:</label><br />
     <input id="name" class="input" name="author" type="text" value="" size="30" /><br />
@@ -101,10 +101,10 @@ h4 {
   <h6>Reviews</h6>
   @foreach($reviews as $review)
   <div class="reviews">
-          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>{{=review.author}}</p>
-          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>{{=review.body}}</p>
+          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>
+          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>
   </div>
-  @endeach
+  @endforeach
       
       
 

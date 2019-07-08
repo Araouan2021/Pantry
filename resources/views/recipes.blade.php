@@ -79,34 +79,4 @@ h4 {
         </div>
       @endforeach
 
-      <h5>LEAVE A REVIEW</h5>
-      <hr>
-
-  <div id="after_submit"></div>
-  <form action="{{=URL('postReview', args=recipe.id)}}" method="post" class="form">
-  <div class="row">
-    <label class="required" for="name">Your name:</label><br />
-    <input id="name" class="input" name="author" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_name"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="review">Your review:</label><br />
-    <textarea id="review" class="input" name="body" rows="7" cols="50"></textarea><br />
-    <span id="review_validation" class="error_review"></span>
-  </div>
-  <input type="submit" class="button" value="Submit">
-  </form>
-  </div>
-  <hr> 
-  <h6>Reviews</h6>
-  {{for review in reviews:}}
-  <div class="reviews">
-          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Author</u><br>{{=review.author}}</p>
-          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Body</u><br>{{=review.body}}</p>
-  </div>
-  {{pass}}
-      
-      
-
-      
       

@@ -22,6 +22,7 @@ Route::get('/add-recipe', 'RecipesController@ShowAddRecipeForm')->name('recipes.
 Route::post('add', 'RecipesController@AddRecipe')->name('recipes.save');
 
 Route::get('/recipes', 'RecipesController@showRecipes')->name('recipes');
+/*
 
 Route::get('/add-review', 'ReviewsController@ShowAddReviewForm')->name('reviews.add');
 
@@ -31,13 +32,13 @@ Route::get('/reviews', 'ReviewsController@showReviews')->name('reviews');
 
 
 
-Route::get('/review/{id}', function($id){
+/*Route::get('/review/{id}', function($id){
 	$recipe = Recipe::find($id);
-	return $recipe->reviews
+	return $recipe->reviews;
 });
 
 
-Route::get('/add-review/{id', function($id){
+Route::get('/add-review/{id}', function($id){
 	$recipe = Recipe::find($id);
 	$recipe->reviews()->create();
 });

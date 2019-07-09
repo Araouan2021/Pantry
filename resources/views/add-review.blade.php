@@ -83,7 +83,8 @@ h4 {
       <hr>
 
   <div id="after_submit"></div>
-  <form action="{{route('add-review', '$recipe.id')}}" method="post" class="form">
+  <form action="{{route('reviews.save', '$recipe.id')}}" method="post" class="form">
+  {{ csrf_field() }}
   <div class="row">
     <label class="required" for="name">Your name:</label><br />
     <input id="name" class="input" name="author" type="text" value="" size="30" /><br />

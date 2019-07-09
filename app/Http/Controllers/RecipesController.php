@@ -25,7 +25,10 @@ class RecipesController extends Controller
 
     public function showRecipes(){
     $recipes = Recipe::all();
-    return view('recipes', compact('recipes'));
+    return $recipes;
     }
+
+
+
 }	
     

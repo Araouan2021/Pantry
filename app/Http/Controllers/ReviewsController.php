@@ -12,7 +12,7 @@ class ReviewsController extends Controller
 
     public function addReview(Request $request){
     	Review::create([
-    	'recipe_id' => request('recipe_id')
+    	'recipe_id' => request('recipe_id'),
     	'author' => request('author'),
     	'body' => request('body'),
     	]);
@@ -26,4 +26,4 @@ class ReviewsController extends Controller
     }
 }	
     
-}
+

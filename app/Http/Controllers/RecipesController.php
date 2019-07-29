@@ -25,7 +25,7 @@ class RecipesController extends Controller
 
     public function showRecipes(){
     $recipes = Recipe::all();
-    return $recipes;
+    return view('recipes');
     }
 
 

@@ -64,7 +64,6 @@ h4 {
       <h1 style="text-align: center; color: DarkRed; font-size: 75px; font-family: 'Questrial', sans-serif;, sans-serif; font-weight: bold;">Pantry</h1>
       <h3 style="color: SaddleBrown; font-family: 'Allura', cursive; font-size: 40px;">Showing Recipes For: &nbsp; ingredients </h3>
       <hr>
-      {{ $recipes='' }}
       @foreach($recipes as $recipe)
         <div class="recipe-details">
          <a href="{{route('recipes', '$recipe->id')}}"                   

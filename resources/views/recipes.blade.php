@@ -66,7 +66,7 @@ h4 {
       <hr>
       @foreach($recipes as $recipe)
         <div class="recipe-details">
-         <a href="{{route('recipes', '$recipe->id')}}"                   
+         <a href="{{route('recipes', '$recipe->id')}}">               
         <img src="{{route('recipes', '$recipe->file')}}" 
              class="img-responsive img-thumbnail">
         </a>

@@ -22,6 +22,9 @@ Route::get('/add-recipe', 'RecipesController@ShowAddRecipeForm')->name('recipes.
 Route::post('add', 'RecipesController@AddRecipe')->name('recipes.save');
 
 Route::get('/recipes', 'RecipesController@showRecipes')->name('recipes');
+
+Route::get('uploadfile','HomeController@uploadfile');
+
 /*
 
 Route::get('/add-review', 'ReviewsController@ShowAddReviewForm')->name('reviews.add');

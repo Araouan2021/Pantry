@@ -66,8 +66,8 @@ h4 {
       <hr>
       @foreach($recipes as $recipe)
         <div class="recipe-details">
-         <a href="{{route('recipes', '$recipe->id')}}">               
-        <img src="{{route('recipes', '$recipe->file')}}" 
+        <a href="{{route('recipes', 'recipe->file')}}">       
+        <img src="{{asset('public/front/images')}}/index/jellof.jpeg"
              class="img-responsive img-thumbnail">
         </a>
           <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;"></u>Title<br></h2>

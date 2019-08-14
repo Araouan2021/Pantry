@@ -28,7 +28,3 @@ class RecipesController extends Controller
     return view ('recipes', compact('recipes'));
     }
 
-
-
-}	
-    

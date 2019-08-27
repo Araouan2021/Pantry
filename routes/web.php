@@ -23,7 +23,10 @@ Route::post('add', 'RecipesController@AddRecipe')->name('recipes.save');
 
 Route::get('/recipes', 'RecipesController@showRecipes')->name('recipes');
 
-Route::get('uploadfile','HomeController@uploadfile');
+Route::get('/uploadfile','HomeController@uploadfile');
+
+Route::post('/uploadfile','HomeController@uploadFilePost');
+
 
 /*
 
@@ -44,4 +47,5 @@ Route::get('/reviews', 'ReviewsController@showReviews')->name('reviews');
 Route::get('/add-review/{id}', function($id){
 	$recipe = Recipe::find($id);
 	$recipe->reviews()->create();
-});
+});*/
+

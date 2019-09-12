@@ -67,11 +67,12 @@ h4 {
       @foreach($recipes as $recipe)
         <div class="recipe-details">
         <a href="{{route('recipes', 'recipe->file')}}">       
-        <img src="{{asset('public/front/images')}}/index/jellof.jpeg"
+        <img src="{{ asset('storage/logos/' . $recipe->image)}}"
              class="img-responsive img-thumbnail">
+             <p>{{ $recipe->size }}</p>
         </a>
           <h2 style="color: DarkRed; font-size: 40px; font-family: 'Khand', sans-serif;"></u>Title<br></h2>
-          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Ingredients</u><br></p>
+          <p style="font-family: 'Molengo', sans-serif; font-size: 15px;""><u>Ingredients</u><br></p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Method</u><br></p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Serving size</u><br></p>
           <p style="font-family: 'Molengo', sans-serif; font-size: 15px;"><u>Time</u><br></p>
